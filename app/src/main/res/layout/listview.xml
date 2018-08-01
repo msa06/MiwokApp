@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fdddc8"
+    >
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/textcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/miwok_translation"
+            style="@style/miwoklisttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miwok" />
+
+        <TextView
+            android:id="@+id/english_translation"
+            style="@style/englishlisttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="English" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/textcontainer"
+            android:layout_marginRight="16dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
